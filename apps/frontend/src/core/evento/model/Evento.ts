@@ -11,5 +11,5 @@ export default interface Evento {
     imagem: string;
     imagemBackground: string;
     publicoEsperado: number;
-    convidados: Convidado;
+    convidados: Convidado[];
 }
