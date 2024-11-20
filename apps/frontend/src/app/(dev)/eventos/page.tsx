@@ -11,13 +11,13 @@ export default function PaginaEventos() {
         <div className="grid grid-cols-3 gap-5">
           {eventos.map((evento) => (
             <div key={evento.id} className="bg-zinc-800 flex flex-col w-full rounded-lg overflow-hidden">
-              <div className="relative w-full h-44">
+              <div className="relative w-full h-52">
                 <Image src={evento.imagem} alt={evento.nome} fill  className='object-cover'/>
               </div>
 
-              <div className='flex flex-col flex-1 p-7 gap-5 items-center'>
+              <div className='flex flex-col flex-1 p-7 gap-5 items-center text-center'>
                 <span className='text-lg font-black'>{evento.nome}</span>
-                <p className='flex-1 text-sm text-zinc-400 text-center'>{evento.descricao}</p>
+                <p className='flex-1 text-sm text-zinc-400 '>{evento.descricao}</p>
 
                 <QRCode 
                     className='w-44 h-44'
@@ -30,7 +30,7 @@ export default function PaginaEventos() {
                      Admin
                     </Link>
 
-                    <Link href={`/evento/admin/${evento.id}/${evento.senha}`} className='flex-1 botao vermelho'>
+                    <Link href={`/convite/${evento.alias}`} className='flex-1 botao vermelho'>
                      Convite
                     </Link>
                 
