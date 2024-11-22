@@ -1,7 +1,7 @@
 export default function PaginaEvento() {
-    return(
-        <div>
-            <span>Evento</span>
-        </div>
-    );
+  return (
+    <div>
+      <span>Evento</span>
+    </div>
+  );
 }

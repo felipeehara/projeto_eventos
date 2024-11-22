@@ -1,9 +1,8 @@
-import { Convidado, Evento } from "@/core";
+import { Convidado, Evento } from "core";
 import InformacoesEvento from "./InformacoesEvento";
 import AcessarViaQrCode from "./AcessarViaQrCode";
 import Estatistica from "../shared/Estatistica";
 import ListaConvidados from "./ListaConvidados";
-
 
 export interface DashboardEventoProps {
   evento: Evento;
